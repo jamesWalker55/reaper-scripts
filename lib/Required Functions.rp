@@ -1,0 +1,36 @@
+# this is a metadata file, this represents one package
+# ideally there will be a *.rp file for each package in the package's root folder
+
+type: script
+category: Functions
+default_filename: lib.lua
+
+description_source: Required Functions
+
+# ============ settings for versions ============
+
+# sets the author for all versions
+author: kotll
+
+versions:
+- number: "0.0.1"
+  commit_hash: 332b7e8609f0e91b9d3789d3c0df521b2486dade
+
+  # list of files included in this version, relative to this file
+  files:
+    - api.lua
+    - config.lua
+    - dev.lua
+    - file.lua
+    - gui.lua
+    - menu.lua
+    - on-project-load.lua
+    - random-string.lua
+    - regex.lua
+  
+  # this is the changelog, it is optional but highly recommended
+  changelog:
+    First commit.
+
+  date: "2021-07-26"
+

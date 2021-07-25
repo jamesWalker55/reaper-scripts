@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf8'?>
+<index version="1" name="kotll's Reaper scripts"><category name="Functions"><reapack name="lib.lua" type="script" desc="Required Functions"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\lib\api.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/api.lua</source><source file="..\lib\config.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/config.lua</source><source file="..\lib\dev.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/dev.lua</source><source file="..\lib\file.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/file.lua</source><source file="..\lib\gui.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/gui.lua</source><source file="..\lib\menu.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/menu.lua</source><source file="..\lib\on-project-load.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/on-project-load.lua</source><source file="..\lib\random-string.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/random-string.lua</source><source file="..\lib\regex.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/regex.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 This package contains the necessary functions to run my scripts.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This MUST be installed for my other packages to work.\par}
+}
+</description></metadata></reapack></category><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 kotll\u8217's Reaper scripts\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This repository contains all scripts I wrote for Reaper.\par}
+}
+</description><link>https://github.com/jamesWalker55/reaper-scripts</link></metadata></index>

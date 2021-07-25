@@ -1,6 +1,9 @@
-name: My Cool Repository
+name: kotll's Reaper scripts
 
-# description is obtained from `desc-repo.rtf` or `desc-repo.md`
+description_source: README
 
 source_url_template:
-  https://{repo_name}.com/{package_category}/{version_commit_hash}/{file_path}
+  https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/{version_commit_hash}/{file_path_url}
+
+links:
+  - https://github.com/jamesWalker55/reaper-scripts
