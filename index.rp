@@ -1,0 +1,6 @@
+name: My Cool Repository
+
+# description is obtained from `desc-repo.rtf` or `desc-repo.md`
+
+source_url_template:
+  https://{repo_name}.com/{package_category}/{version_commit_hash}/{file_path}
