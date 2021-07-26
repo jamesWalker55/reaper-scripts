@@ -1,0 +1,38 @@
+# this is a metadata file, this represents one package
+# ideally there will be a *.rp file for each package in the package's root folder
+
+type: script
+category: MIDI
+
+default_filename: Force enable send all input to VKB
+
+# ============ settings for versions ============
+
+# sets the author for all versions
+author: kotll
+
+versions:
+- number: "0.0.1"
+  commit_hash: a1f7152867eddfe8c9ea510b087d830993c3eeaf
+
+  # list of files included in this version, relative to this file
+  files:
+    - path: send-virtual-keyboard.lua
+      sections:
+      - main
+      - midi_editor
+      - midi_inlineeditor
+      - midi_eventlisteditor
+    - path: toggle-virtual-keyboard.lua
+      sections:
+      - main
+      - midi_editor
+      - midi_inlineeditor
+      - midi_eventlisteditor
+  
+  # this is the changelog, it is optional but highly recommended
+  changelog:
+    First commit.
+
+  date: "2021-07-26"
+
