@@ -1,3 +1,6 @@
+# how to generate the index:
+# python "D:\Programming\reapack-indexer\cli.py" .
+
 name: kotll's Reaper scripts
 
 description_source: README
