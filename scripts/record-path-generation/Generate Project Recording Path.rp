@@ -1,0 +1,31 @@
+# this is a metadata file, this represents one package
+# ideally there will be a *.rp file for each package in the package's root folder
+
+type: script
+category: Functions
+
+default_filename: Generate Project Recording Path
+
+# ============ settings for versions ============
+
+# sets the author for all versions
+author: kotll
+
+versions:
+- number: "0.0.1"
+  commit_hash: 566982dfe653aaf649be607aab9a1a62a32d527c
+
+  # list of files included in this version, relative to this file
+  files:
+    - path: set-record-path.lua
+      sections: main
+    - path: set-record-root-path.lua
+      sections: main
+    - const.lua
+  
+  # this is the changelog, it is optional but highly recommended
+  changelog:
+    First commit.
+
+  date: "2021-07-26"
+
