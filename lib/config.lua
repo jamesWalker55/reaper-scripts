@@ -1,4 +1,4 @@
-local SECTION = "KOTLL_CONFIG"
+local SECTION = "kotll Scripts"
 
 -- sets a setting, key and value must be strings
 -- persist lets the value persist after exiting reaper
