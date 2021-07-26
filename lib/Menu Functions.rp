@@ -4,8 +4,8 @@
 type: script
 category: Functions
 
-default_filename: Required Functions
-description_source: Required Functions
+default_filename: Menu Functions
+description_source: Menu Functions
 
 # ============ settings for versions ============
 
@@ -18,14 +18,7 @@ versions:
 
   # list of files included in this version, relative to this file
   files:
-    - api.lua
-    - config.lua
-    - dev.lua
-    - file.lua
-    - gui.lua
-    - on-project-load.lua
-    - random-string.lua
-    - regex.lua
+    - menu.lua
   
   # this is the changelog, it is optional but highly recommended
   changelog:

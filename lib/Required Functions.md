@@ -1,3 +1,1 @@
-This package contains the necessary functions to run my scripts.
-
-This MUST be installed for my other packages to work.
+This package MUST be installed for most of my other packages to work, it contains the necessary functions other scripts use.
