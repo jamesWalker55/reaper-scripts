@@ -3,8 +3,8 @@
 
 type: script
 category: Functions
-default_filename: lib.lua
 
+default_filename: Required Functions
 description_source: Required Functions
 
 # ============ settings for versions ============
