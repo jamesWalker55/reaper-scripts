@@ -9,11 +9,11 @@ ACTION_SHOW_VKB = 40377
 -- if command has no state, return `nil`
 function GetMainCommandState(command_id)
     local state_num = reaper.GetToggleCommandStateEx(0, command_id)
-	if state_num == -1 then
-    	return nil
-	else
-    	return state_num == 1
-	end
+    if state_num == -1 then
+        return nil
+    else
+        return state_num == 1
+    end
 end
 
 -- enable ACTION_SEND_TO_VKB
