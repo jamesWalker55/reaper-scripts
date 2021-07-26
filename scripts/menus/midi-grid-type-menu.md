@@ -1,0 +1,1 @@
+A dropdown menu for controlling the grid settings of the MIDI editor.

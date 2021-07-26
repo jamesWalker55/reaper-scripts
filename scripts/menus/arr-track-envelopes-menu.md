@@ -1,0 +1,1 @@
+A dropdown menu for controlling the visible track envelopes in the arrangement view.

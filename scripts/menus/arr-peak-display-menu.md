@@ -1,0 +1,1 @@
+A dropdown menu for controlling the peak display in media items in the arrangement view.
