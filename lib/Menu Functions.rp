@@ -2,7 +2,7 @@
 # ideally there will be a *.rp file for each package in the package's root folder
 
 type: script
-category: Functions
+category: Menu
 
 default_filename: Menu Functions
 description_source: Menu Functions
