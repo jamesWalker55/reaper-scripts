@@ -3,8 +3,6 @@
 
 name: kotll's Reaper scripts
 
-description_source: README
-
 source_url_template:
   https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/{version_commit_hash}/{file_path_url}
 
