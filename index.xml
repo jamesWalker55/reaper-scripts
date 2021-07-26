@@ -107,6 +107,21 @@
 
 {\pard \ql \f0 \sa180 \li0 \fi0 This package MUST be installed for most of my other packages to work, it contains the necessary functions other scripts use.\par}
 }
+</description></metadata></reapack><reapack name="Generate Project Recording Path" type="script" desc="Generate Project Recording Path"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\record-path-generation\set-record-path.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/566982dfe653aaf649be607aab9a1a62a32d527c/scripts/record-path-generation/set-record-path.lua</source><source file="..\scripts\record-path-generation\set-record-root-path.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/566982dfe653aaf649be607aab9a1a62a32d527c/scripts/record-path-generation/set-record-root-path.lua</source><source file="..\scripts\record-path-generation\const.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/566982dfe653aaf649be607aab9a1a62a32d527c/scripts/record-path-generation/const.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Generate Project Recording Path\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This package contains 2 scripts for automatically generating and setting the \u8220"recording path\u8221" of a project.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The user provides a base path, then the script generates a random subfolder in that base path as the \u8220"recording path\u8221".\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 How to use\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 set-record-root-path.lua}\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Used to set the base path used for generating new paths\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Preferably a relative path, because Reaper is buggy with absolute paths (unless the devs decide to fix it)\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab e.g.\u160?{\f1 _Audio files}\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 set-record-path.lua}\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Used to generate a new recording path and set it to the project\u8217's \u8220"recording path\u8221" setting\sa180\sa180\par}
+}
 </description></metadata></reapack></category><category name="MIDI"><reapack name="Force enable send all input to VKB" type="script" desc="Force enable send all input to VKB"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\send-virtual-keyboard\send-virtual-keyboard.lua" main="main midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/a1f7152867eddfe8c9ea510b087d830993c3eeaf/scripts/send-virtual-keyboard/send-virtual-keyboard.lua</source><source file="..\scripts\send-virtual-keyboard\toggle-virtual-keyboard.lua" main="main midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/a1f7152867eddfe8c9ea510b087d830993c3eeaf/scripts/send-virtual-keyboard/toggle-virtual-keyboard.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
@@ -114,7 +129,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Force enable send all input to VKB\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 This script keeps trying to enable the virtual MIDI keybord input and popup until they are both enabled.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Why?\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 When setting {\f1 Virtual MIDI keyboard: Send all input to VKB} as the SWS startup action, it doesn\u8217't work and the option stays as off. Instead, use this script instead and {\f1 Virtual MIDI keyboard: Send all input to VKB} will be enabled consistently on Reaper startup.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 When setting {\f1 Virtual MIDI keyboard: Send all input to VKB} as the SWS startup action, it doesn\u8217't work and the option stays as off. Use this script as the SWS startup action instead and {\f1 Virtual MIDI keyboard: Send all input to VKB} will be enabled consistently on Reaper startup.\par}
 }
 </description></metadata></reapack></category><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
