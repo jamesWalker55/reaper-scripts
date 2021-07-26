@@ -5,7 +5,7 @@ package.path = parent_dir .. "?.lua"
 require "lib.menu"
 
 local menu_table = {
-    {name = "#All windows"},
+    {name = "#Toggle all windows"},
     {name = "All floating windows (except mixer and docker)", cmd = 41080},
     {name = "All floating windows (except docker)", cmd = 41079},
     {name = ""},

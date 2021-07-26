@@ -40,7 +40,7 @@ local menu_table = {
         {name = "To stereo (2nd pass render)", cmd = 42413},
         {name = "<To multichannel (2nd pass render)", cmd = 42414},
     {name = ""},
-    {name = "#Render selected items"},
+    {name = "#Render selected items (KAWA)"},
     {name = "To stereo, obeying time selection", cmd = "_kawa_MAIN2_Render_SelectedItems_ToNewTrack"},
 }
 
