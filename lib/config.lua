@@ -27,11 +27,26 @@ local function configExists(key)
 end
 
 --[[
-config variable
+config variable.
 
-DO NOT STORE STRINGS WITH A NEWLINE `\n`. This will bug out `reaper-extstate.ini` and make it unusable
+Preferred way of accessing settings is through `val` shorthand. It doesn't
+return an empty string if the given key doesn't exist.
+
+DO NOT STORE STRINGS WITH A NEWLINE `\n`. This will bug out
+`reaper-extstate.ini` and make it unusable
 ```
 config = require "lib.config"
+
+-- using val shorthand
+config.has_key("cool_key") == false
+config.val.cool_key == nil
+
+config.val.cool_key = "hello"
+
+config.val.cool_key == "hello"
+
+config.val.cool_key = nil
+config.has_key("cool_key") == false
 
 -- standard operations
 config.has_key("cool_key") == false
@@ -42,17 +57,6 @@ config.get("cool_key") == "hello"
 config.has_key("cool_key") == true
 
 config.del("cool_key")
-config.has_key("cool_key") == false
-
--- using val shorthand
-config.has_key("cool_key") == false
-
-config.val.cool_key = "hello"
-
-config.val.cool_key == "hello"
-config.has_key("cool_key") == true
-
-config.val.cool_key = nil
 config.has_key("cool_key") == false
 ```
  ]]
@@ -70,7 +74,7 @@ local config_metatable = {
         if configExists(key) then
             return configGet(key)
         else
-            error("The key '" .. key .. "' does not exist in the extended state!")
+            return nil, "The key '" .. key .. "' does not exist in the extended state!"
         end
     end,
 
