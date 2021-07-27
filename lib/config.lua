@@ -28,6 +28,8 @@ end
 
 --[[
 config variable
+
+DO NOT STORE STRINGS WITH A NEWLINE `\n`. This will bug out `reaper-extstate.ini` and make it unusable
 ```
 config = require "lib.config"
 
