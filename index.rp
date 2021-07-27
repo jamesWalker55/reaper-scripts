@@ -8,3 +8,5 @@ source_url_template:
 
 links:
   - https://github.com/jamesWalker55/reaper-scripts
+  - type: donation
+    url: https://www.paypal.com/donate?hosted_button_id=3NR45TFBMSFYL
