@@ -114,6 +114,11 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Generate Project Recording Path\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 This package contains 2 scripts for automatically generating and setting the \u8220"recording path\u8221" of a project.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 The user provides a base path, then the script generates a random subfolder in that base path as the \u8220"recording path\u8221".\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 For example, if I set the base path as {\f1 _Audio files}, the generated recording paths will look like this:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 _Audio files/s72el275nglp}\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 _Audio files/inf3yxjcgdub}\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 _Audio files/bw7x4uwg7mkm}\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 _Audio files/jzvn8tdd1ke4}\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 How to use\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 set-record-root-path.lua}\par}
 {\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Used to set the base path used for generating new paths\par}
