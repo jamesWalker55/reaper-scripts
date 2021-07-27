@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf8'?>
-<index version="1" name="kotll's Reaper scripts"><category name="Menu"><reapack name="Menu Functions" type="script" desc="Menu Functions"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\lib\menu.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/4769b92e3a21c6ba32e69a0f6a8b4fdbe0d44dca/lib/menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+<index version="1" name="kotll's Reaper scripts"><category name="Menu"><reapack name="Menu Functions" type="script" desc="Menu Functions"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\lib\menu.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/lib/menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 This package contains the necessary functions to run the menu scripts.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 This MUST be installed for my menu scripts to work!\par}
 }
-</description></metadata></reapack><reapack name="arr-freeze-menu-sws-kawa" type="script" desc="Arrangement Freeze Menu (SWS and KAWA)"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-freeze-menu-sws-kawa.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/arr-freeze-menu-sws-kawa.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="arr-freeze-menu-sws-kawa" type="script" desc="Arrangement Freeze Menu (SWS and KAWA)"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-freeze-menu-sws-kawa.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/arr-freeze-menu-sws-kawa.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
@@ -14,20 +14,20 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 This KAWA version adds an additional option for rendering selected items to stems.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Note: This requires the SWS and KAWA extensions to work.\par}
 }
-</description></metadata></reapack><reapack name="arr-freeze-menu-sws" type="script" desc="Arrangement Freeze Menu (SWS)"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-freeze-menu-sws.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/arr-freeze-menu-sws.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="arr-freeze-menu-sws" type="script" desc="Arrangement Freeze Menu (SWS)"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-freeze-menu-sws.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/arr-freeze-menu-sws.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 A dropdown menu for freezing tracks/items in the arrangement view.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Note: This requires the SWS extension to work.\par}
 }
-</description></metadata></reapack><reapack name="arr-peak-display-menu" type="script" desc="Arrangement Peak Display Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-peak-display-menu.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/arr-peak-display-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="arr-peak-display-menu" type="script" desc="Arrangement Peak Display Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-peak-display-menu.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/arr-peak-display-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 A dropdown menu for controlling the peak display in media items in the arrangement view.\par}
 }
-</description></metadata></reapack><reapack name="arr-take-envelopes-menu-sws" type="script" desc="Arrangement Take Envelopes Menu (SWS)"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-take-envelopes-menu-sws.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/arr-take-envelopes-menu-sws.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="arr-take-envelopes-menu-sws" type="script" desc="Arrangement Take Envelopes Menu (SWS)"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-take-envelopes-menu-sws.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/arr-take-envelopes-menu-sws.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
@@ -35,46 +35,46 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 This SWS version provides a few more options to select from compared to the non SWS version.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Note: This requires the SWS extension to work.\par}
 }
-</description></metadata></reapack><reapack name="arr-take-envelopes-menu" type="script" desc="Arrangement Take Envelopes Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-take-envelopes-menu.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/arr-take-envelopes-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="arr-take-envelopes-menu" type="script" desc="Arrangement Take Envelopes Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-take-envelopes-menu.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/arr-take-envelopes-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 A dropdown menu for controlling the visible take envelopes for take items in the arrangement view.\par}
 }
-</description></metadata></reapack><reapack name="arr-track-envelopes-menu" type="script" desc="Arrangement Track Envelopes Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-track-envelopes-menu.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/arr-track-envelopes-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="arr-track-envelopes-menu" type="script" desc="Arrangement Track Envelopes Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-track-envelopes-menu.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/arr-track-envelopes-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 A dropdown menu for controlling the visible track envelopes in the arrangement view.\par}
 }
-</description></metadata></reapack><reapack name="arr-windows-menu-sws" type="script" desc="Arrangement Windows/Dialogs Menu (SWS)"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-windows-menu-sws.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/arr-windows-menu-sws.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="arr-windows-menu-sws" type="script" desc="Arrangement Windows/Dialogs Menu (SWS)"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-windows-menu-sws.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/arr-windows-menu-sws.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 A dropdown menu for controlling the visible windows and dialogs in the arrangement view.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Note: This requires the SWS extension to work.\par}
 }
-</description></metadata></reapack><reapack name="arr-zoom-menu-sws" type="script" desc="Arrangement Zoom Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-zoom-menu-sws.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/arr-zoom-menu-sws.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="arr-zoom-menu-sws" type="script" desc="Arrangement Zoom Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\arr-zoom-menu-sws.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/arr-zoom-menu-sws.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 A dropdown menu for controlling the arrangement view zoom (e.g.\u160?zooming to selected tracks/items/time period etc).\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Note: This requires the SWS extension to work.\par}
 }
-</description></metadata></reapack><reapack name="midi-channel-menu" type="script" desc="MIDI Editor MIDI Channel Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-channel-menu.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/midi-channel-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="midi-channel-menu" type="script" desc="MIDI Editor MIDI Channel Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-channel-menu.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/midi-channel-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 A dropdown menu for controlling the visible MIDI channels in the MIDI editor.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 The checkboxes beside the channels are very buggy, this is exactly how the action states are displayed in the action menu. It is impossible to fix this unless Reaper devs decide to fix this.\par}
 }
-</description></metadata></reapack><reapack name="midi-color-menu" type="script" desc="MIDI Editor MIDI Color Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-color-menu.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/midi-color-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="midi-color-menu" type="script" desc="MIDI Editor MIDI Color Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-color-menu.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/midi-color-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 A dropdown menu for controlling the MIDI note color settings for the MIDI editor.\par}
 }
-</description></metadata></reapack><reapack name="midi-grid-type-menu-sws" type="script" desc="MIDI Editor Grid Type Menu (SWS)"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-grid-type-menu-sws.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/midi-grid-type-menu-sws.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="midi-grid-type-menu-sws" type="script" desc="MIDI Editor Grid Type Menu (SWS)"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-grid-type-menu-sws.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/midi-grid-type-menu-sws.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
@@ -82,32 +82,32 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 This version uses a different layout for setting the grid layout, using SWS actions.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Note: This requires the SWS extension to work.\par}
 }
-</description></metadata></reapack><reapack name="midi-grid-type-menu" type="script" desc="MIDI Editor Grid Type Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-grid-type-menu.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/midi-grid-type-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="midi-grid-type-menu" type="script" desc="MIDI Editor Grid Type Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-grid-type-menu.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/midi-grid-type-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 A dropdown menu for controlling the grid settings of the MIDI editor.\par}
 }
-</description></metadata></reapack><reapack name="midi-quantize-menu" type="script" desc="MIDI Editor Quantize Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-quantize-menu.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/midi-quantize-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="midi-quantize-menu" type="script" desc="MIDI Editor Quantize Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-quantize-menu.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/midi-quantize-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 A dropdown menu for quantizing notes/events in the MIDI editor.\par}
 }
-</description></metadata></reapack><reapack name="midi-transform-menu" type="script" desc="MIDI Editor Notes Transform Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-transform-menu.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/6c30cfde04cfee4b23c51b1857f942743dc585c1/scripts/menus/midi-transform-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="midi-transform-menu" type="script" desc="MIDI Editor Notes Transform Menu"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\menus\midi-transform-menu.lua" main="midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/menus/midi-transform-menu.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 A dropdown menu for doing MIDI transformation operations in the MIDI editor.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Operations include flipping notes horizontally/vertically, legato, muting etc.\par}
 }
-</description></metadata></reapack></category><category name="Functions"><reapack name="Required Functions" type="script" desc="Required Functions"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\lib\config.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/config.lua</source><source file="..\lib\file.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/file.lua</source><source file="..\lib\random-string.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/random-string.lua</source><source file="..\lib\regex.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/332b7e8609f0e91b9d3789d3c0df521b2486dade/lib/regex.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack></category><category name="Functions"><reapack name="Required Functions" type="script" desc="Required Functions"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\lib\config.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/lib/config.lua</source><source file="..\lib\file.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/lib/file.lua</source><source file="..\lib\random-string.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/lib/random-string.lua</source><source file="..\lib\regex.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/lib/regex.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
 {\pard \ql \f0 \sa180 \li0 \fi0 This package MUST be installed for most of my other packages to work, it contains the necessary functions other scripts use.\par}
 }
-</description></metadata></reapack><reapack name="Generate Project Recording Path" type="script" desc="Generate Project Recording Path"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\record-path-generation\set-record-path.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/566982dfe653aaf649be607aab9a1a62a32d527c/scripts/record-path-generation/set-record-path.lua</source><source file="..\scripts\record-path-generation\set-record-root-path.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/566982dfe653aaf649be607aab9a1a62a32d527c/scripts/record-path-generation/set-record-root-path.lua</source><source file="..\scripts\record-path-generation\const.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/566982dfe653aaf649be607aab9a1a62a32d527c/scripts/record-path-generation/const.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack><reapack name="Generate Project Recording Path" type="script" desc="Generate Project Recording Path"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\record-path-generation\set-record-path.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/record-path-generation/set-record-path.lua</source><source file="..\scripts\record-path-generation\set-record-root-path.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/record-path-generation/set-record-root-path.lua</source><source file="..\scripts\record-path-generation\const.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/record-path-generation/const.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
@@ -127,7 +127,7 @@
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 set-record-path.lua}\par}
 {\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Used to generate a new recording path and set it to the project\u8217's \u8220"recording path\u8221" setting\sa180\sa180\par}
 }
-</description></metadata></reapack></category><category name="MIDI"><reapack name="Force enable send all input to VKB" type="script" desc="Force enable send all input to VKB"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\send-virtual-keyboard\send-virtual-keyboard.lua" main="main midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/a1f7152867eddfe8c9ea510b087d830993c3eeaf/scripts/send-virtual-keyboard/send-virtual-keyboard.lua</source><source file="..\scripts\send-virtual-keyboard\toggle-virtual-keyboard.lua" main="main midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/a1f7152867eddfe8c9ea510b087d830993c3eeaf/scripts/send-virtual-keyboard/toggle-virtual-keyboard.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+</description></metadata></reapack></category><category name="MIDI"><reapack name="Force enable send all input to VKB" type="script" desc="Force enable send all input to VKB"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\send-virtual-keyboard\send-virtual-keyboard.lua" main="main midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/send-virtual-keyboard/send-virtual-keyboard.lua</source><source file="..\scripts\send-virtual-keyboard\toggle-virtual-keyboard.lua" main="main midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/81346139876d201fdbe0f620557b6f84846f6af1/scripts/send-virtual-keyboard/toggle-virtual-keyboard.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
@@ -143,4 +143,4 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 kotll\u8217's Reaper scripts\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 This repository contains all scripts I wrote for Reaper.\par}
 }
-</description><link>https://github.com/jamesWalker55/reaper-scripts</link></metadata></index>
+</description><link>https://github.com/jamesWalker55/reaper-scripts</link><link rel="donation">https://www.paypal.com/donate?hosted_button_id=3NR45TFBMSFYL</link></metadata></index>
