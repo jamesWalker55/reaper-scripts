@@ -4,12 +4,12 @@ local actions = require "lib.actions"
 
 -- global SECTION_ID for backwards compatibility
 SECTION_ID = {
-    MAIN = actions.SECTION_MAIN,
-    MAIN_ALT = actions.SECTION_MAIN_ALT,
-    MIDI = actions.SECTION_MIDI,
-    MIDI_EVENTLIST = actions.SECTION_MIDI_EVENTLIST,
-    MIDI_INLINE = actions.SECTION_MIDI_INLINE,
-    EXPLORER = actions.SECTION_EXPLORER,
+    MAIN = actions.MAIN,
+    MAIN_ALT = actions.MAIN_ALT,
+    MIDI = actions.MIDI,
+    MIDI_EVENTLIST = actions.MIDI_EVENTLIST,
+    MIDI_INLINE = actions.MIDI_INLINE,
+    EXPLORER = actions.EXPLORER,
 }
 
 -- given the menu and the item number, return the name of the menu item the user clicked on

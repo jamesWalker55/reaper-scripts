@@ -2,12 +2,12 @@
 
 local actions = {}
 
-actions.SECTION_MAIN = 0
-actions.SECTION_MAIN_ALT = 100
-actions.SECTION_MIDI = 32060
-actions.SECTION_MIDI_EVENTLIST = 32061
-actions.SECTION_MIDI_INLINE = 32062
-actions.SECTION_EXPLORER = 32063
+actions.MAIN = 0
+actions.MAIN_ALT = 100
+actions.MIDI = 32060
+actions.MIDI_EVENTLIST = 32061
+actions.MIDI_INLINE = 32062
+actions.EXPLORER = 32063
 
 -- if the input command is a string, then do a lookup
 -- otherwise do nothing
@@ -34,9 +34,9 @@ actions.execute = function(section_id, command_id)
   -- resolve command just in case it is a string
   command_id = actions._resolveAction(command_id)
 
-  if section_id == actions.SECTION_MAIN or section_id == actions.SECTION_MAIN_ALT then
+  if section_id == actions.MAIN or section_id == actions.MAIN_ALT then
     return reaper.Main_OnCommandEx(command_id, 0, 0)
-  elseif section_id == actions.SECTION_MIDI or section_id == actions.SECTION_MIDI_EVENTLIST or section_id == actions.SECTION_MIDI_INLINE then
+  elseif section_id == actions.MIDI or section_id == actions.MIDI_EVENTLIST or section_id == actions.MIDI_INLINE then
     return reaper.MIDIEditor_LastFocused_OnCommand(command_id, false)
   else
     error("Unknown section_id: " .. section_id)
