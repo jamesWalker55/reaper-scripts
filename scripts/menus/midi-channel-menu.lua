@@ -3,6 +3,7 @@ local parent_dir = ({reaper.get_action_context()})[2]:match('^(.+[\\//])scripts'
 package.path = parent_dir .. "?.lua"
 
 require "lib.menu"
+local act = require "lib.actions"
 
 -- various action ids
 ACTION_ID = {
@@ -40,8 +41,8 @@ local function MIDIChannelStates()
 
     for ch = 1, 16 do
         local isSolo, isVisible, isEditable
-        isSolo = GetCommandState(SECTION_ID.MIDI, ACTION_ID.SOLO_START + ch - 1)
-        isVisible = GetCommandState(SECTION_ID.MIDI, ACTION_ID.VISIBLE_START + ch - 1)
+        isSolo = act.getState(SECTION_ID.MIDI, ACTION_ID.SOLO_START + ch - 1)
+        isVisible = act.getState(SECTION_ID.MIDI, ACTION_ID.VISIBLE_START + ch - 1)
         isEditable = ch == editingChannel
         if isVisible then states.allVisible = false end
         table.insert(states.solo, isSolo)
