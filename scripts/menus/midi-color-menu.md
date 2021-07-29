@@ -1,1 +1,0 @@
-A dropdown menu for controlling the MIDI note color settings for the MIDI editor.

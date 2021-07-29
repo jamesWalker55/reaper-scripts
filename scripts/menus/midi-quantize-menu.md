@@ -1,1 +1,0 @@
-A dropdown menu for quantizing notes/events in the MIDI editor.

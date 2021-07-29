@@ -1,1 +1,0 @@
-A dropdown menu for controlling the visible take envelopes for take items in the arrangement view.
