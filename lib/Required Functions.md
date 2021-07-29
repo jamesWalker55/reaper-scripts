@@ -1,1 +1,0 @@
-This package MUST be installed for most of my other packages to work, it contains the necessary functions other scripts use.
