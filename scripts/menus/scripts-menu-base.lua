@@ -49,19 +49,19 @@ function FilterActions(actions, blacklist)
   return filtered_actions
 end
 
-function SetBlacklist()
-  local ok, blacklist = reaper.GetUserInputs("Edit blacklist", 1, "Use '|' to separate each item,extrawidth=400", config.val.arr_menu_blacklist or "")
+function SetBlacklist(blacklist_key)
+  local ok, blacklist = reaper.GetUserInputs("Edit blacklist", 1, "Use '|' to separate each item,extrawidth=400", config.val[blacklist_key] or "")
   if not ok then return end
 
-  config.val.arr_menu_blacklist = blacklist
+  config.val[blacklist_key] = blacklist
 end
 
-function DisplayScriptMenu(section_id)
+function DisplayScriptMenu(section_id, blacklist_key)
   local actions = ScriptActions(section_id)
 
   -- filter actions if blacklist exists
-  if config.val.arr_menu_blacklist ~= nil then
-    local blacklist = config.val.arr_menu_blacklist:split("|")
+  if config.val[blacklist_key] ~= nil then
+    local blacklist = config.val[blacklist_key]:split("|")
     actions = FilterActions(actions, blacklist)
   end
 
@@ -72,7 +72,7 @@ function DisplayScriptMenu(section_id)
   local menu_id = DisplayMenu(menu.str)
 
   if menu_id == 1 then
-    SetBlacklist()
+    SetBlacklist(blacklist_key)
   elseif menu_id ~= 0 then
     act.execute(section_id, menu.cmd_map[menu_id])
   end
