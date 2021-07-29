@@ -1,0 +1,65 @@
+# this is a metadata file, this represents one package
+# ideally there will be a *.rp file for each package in the package's root folder
+
+type: script
+category: Various
+
+default_filename: Various Dropdown Menus
+
+# ============ settings for versions ============
+
+# sets the author for all versions
+author: kotll
+
+versions:
+- number: "0.0.1"
+  commit_hash: f8bb94d72b849e869e8ead356989cde0b69e93c9
+
+  # list of files included in this version, relative to this file
+  files:
+    - path: arr-freeze-menu-sws-kawa.lua
+      section: main
+    - path: arr-freeze-menu-sws.lua
+      section: main
+    - path: arr-peak-display-menu.lua
+      section: main
+    - path: arr-scripts-menu-js.lua
+      section: main
+    - path: arr-take-envelopes-menu-sws.lua
+      section: main
+    - path: arr-take-envelopes-menu.lua
+      section: main
+    - path: arr-track-envelopes-menu.lua
+      section: main
+    - path: arr-windows-menu-sws.lua
+      section: main
+    - path: arr-zoom-menu-sws.lua
+      section: main
+    - path: midi-channel-menu.lua
+      section: midi_editor
+    - path: midi-color-menu.lua
+      section: midi_editor
+    - path: midi-explode-menu-kawa.lua
+      section: midi_editor
+    - path: midi-grid-type-menu-sws.lua
+      section: midi_editor
+    - path: midi-grid-type-menu.lua
+      section: midi_editor
+    - path: midi-note-names-menu.lua
+      section: midi_editor
+    - path: midi-quantize-menu.lua
+      section: midi_editor
+    - path: midi-scripts-menu-js.lua
+      section: midi_editor
+    - path: midi-transform-menu-kawa.lua
+      section: midi_editor
+    - path: midi-transform-menu.lua
+      section: midi_editor
+    - path: midi-visibility-menu.lua
+      section: midi_editor
+    - scripts-menu-base.lua
+  
+  changelog:
+    First commit.
+
+  date: "2021-07-29"
