@@ -10,6 +10,8 @@ require "lib.menu"
 local act = require "lib.actions"
 local config = require "lib.config"
 
+-- return a list of script actions
+-- this method also strips some text from the name
 function ScriptActions(section_id)
   local scripts = {}
 
