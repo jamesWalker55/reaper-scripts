@@ -18,10 +18,15 @@ function ScriptActions(section_id)
   while command_id ~= 0 do
     command_id, name = reaper.CF_EnumerateActions(section_id, action_idx)
     if name:match("^Script: ") then
-      local name_without_script = name:match("^Script: (.+)$")
-      local final_dot_pos = ({name_without_script:find("%.[^%.]*$")})[1]
-      local name_without_extension = name_without_script:sub(0, final_dot_pos - 1)
-      table.insert(scripts, {cmd=command_id, name=name_without_extension})
+      local final_name = name:match("^Script: (.+)$")
+
+      -- try to find fullstop, then remove all text after it
+      local final_dot_pos = ({final_name:find("%.[^%.]*$")})[1]
+      if final_dot_pos then
+        final_name = final_name:sub(0, final_dot_pos - 1)
+      end
+
+      table.insert(scripts, {cmd=command_id, name=final_name})
     end
     action_idx = action_idx + 1
   end
