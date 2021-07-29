@@ -7,7 +7,7 @@ require "lib.menu"
 local menu_table = {
     {name = "#Track envelopes"},
     {name = "Toggle display all envelopes", cmd = 41152, check_state = true},
-    {name = "Activate/bypass envelope for last touched FX parameter", cmd = 41983},
+    {name = "Toggle envelope for last touched FX parameter", cmd = 41983},
     {name = ""},
     {name = "#Toggle envelope visibility"},
     {name = "Volume", cmd = 40406},
