@@ -60,8 +60,8 @@ function SetBlacklist()
   config.val.arr_menu_blacklist = blacklist
 end
 
-function Main()
-  local actions = ScriptActions(act.MAIN)
+function DisplayScriptMenu(section_id)
+  local actions = ScriptActions(section_id)
 
   -- filter actions if blacklist exists
   if config.val.arr_menu_blacklist ~= nil then
@@ -72,16 +72,14 @@ function Main()
   table.insert(actions, 1, {name = ""})
   table.insert(actions, 1, {name = "Blacklist..."})
 
-  local section = act.MAIN
-
-  local menu = ProcessMenu(section, actions)
+  local menu = ProcessMenu(section_id, actions)
   local menu_id = DisplayMenu(menu.str)
 
   if menu_id == 1 then
     SetBlacklist()
   elseif menu_id ~= 0 then
-    act.execute(section, menu.cmd_map[menu_id])
+    act.execute(section_id, menu.cmd_map[menu_id])
   end
 end
 
-Main()
+DisplayScriptMenu(act.MAIN)
