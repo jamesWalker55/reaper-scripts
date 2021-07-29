@@ -3,27 +3,27 @@ local SECTION = "kotll Scripts"
 -- sets a setting, key and value must be strings
 -- persist lets the value persist after exiting reaper
 local function configSet(key, value, permanent)
-    assert(type(value) == "string", "only strings may be stored in extended state! (input type is " .. type(value) .. ")")
-    -- setting is permanent by default
-    if permanent == nil then permanent = true end
-    reaper.SetExtState(SECTION, key, value, permanent)
+  assert(type(value) == "string", "only strings may be stored in extended state! (input type is " .. type(value) .. ")")
+  -- setting is permanent by default
+  if permanent == nil then permanent = true end
+  reaper.SetExtState(SECTION, key, value, permanent)
 end
 
 -- gets a setting, key must be a string
 local function configGet(key)
-    return reaper.GetExtState(SECTION, key)
+  return reaper.GetExtState(SECTION, key)
 end
 
 -- deletes a setting, key must be a string
 local function configDel(key, permanent)
-    -- delete setting permanently by default
-    if permanent == nil then permanent = true end
-    reaper.DeleteExtState(SECTION, key, permanent)
+  -- delete setting permanently by default
+  if permanent == nil then permanent = true end
+  reaper.DeleteExtState(SECTION, key, permanent)
 end
 
 -- checks if a setting exists, key must be a string
 local function configExists(key)
-    return reaper.HasExtState(SECTION, key)
+  return reaper.HasExtState(SECTION, key)
 end
 
 --[[
@@ -61,32 +61,32 @@ config.has_key("cool_key") == false
 ```
  ]]
 local config = {
-    has_key = configExists,
-    set = configSet,
-    get = configGet,
-    del = configDel,
-    val = {},
+  has_key = configExists,
+  set = configSet,
+  get = configGet,
+  del = configDel,
+  val = {},
 }
 
 local config_metatable = {
-    -- access config with `config.val.KEY_NAME`
-    __index = function(table, key)
-        if configExists(key) then
-            return configGet(key)
-        else
-            return nil, "The key '" .. key .. "' does not exist in the extended state!"
-        end
-    end,
-
-    -- set config with `config.val.KEY_NAME = VALUE` ;
-    -- delete a config with `config.val.KEY_NAME = nil`
-    __newindex = function(table, key, val)
-        if val == nil then
-            configDel(key)
-        else
-            configSet(key, val)
-        end
+  -- access config with `config.val.KEY_NAME`
+  __index = function(table, key)
+    if configExists(key) then
+      return configGet(key)
+    else
+      return nil, "The key '" .. key .. "' does not exist in the extended state!"
     end
+  end,
+
+  -- set config with `config.val.KEY_NAME = VALUE` ;
+  -- delete a config with `config.val.KEY_NAME = nil`
+  __newindex = function(table, key, val)
+    if val == nil then
+      configDel(key)
+    else
+      configSet(key, val)
+    end
+  end
 }
 
 setmetatable(config.val, config_metatable)
