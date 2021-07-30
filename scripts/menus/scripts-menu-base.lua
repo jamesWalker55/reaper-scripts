@@ -56,6 +56,10 @@ function SetBlacklist(blacklist_key)
   config.val[blacklist_key] = blacklist
 end
 
+function ActionSorter(action1, action2)
+  return action1.name:upper() < action2.name:upper()
+end
+
 function DisplayScriptMenu(section_id, blacklist_key)
   local actions = ScriptActions(section_id)
 
@@ -64,6 +68,8 @@ function DisplayScriptMenu(section_id, blacklist_key)
     local blacklist = config.val[blacklist_key]:split("|")
     actions = FilterActions(actions, blacklist)
   end
+
+  table.sort(actions, ActionSorter)
 
   table.insert(actions, 1, {name = ""})
   table.insert(actions, 1, {name = "Blacklist..."})
