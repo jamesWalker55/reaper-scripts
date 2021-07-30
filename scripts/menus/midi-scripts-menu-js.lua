@@ -6,4 +6,4 @@ package.path = _parent_path .. ';' .. _root_path
 local act = require "lib.actions"
 require "scripts-menu-base"
 
-DisplayScriptMenu(act.MAIN, "midi_scripts_menu_blacklist")
+DisplayScriptMenu(act.MIDI, "midi_scripts_menu_blacklist")
