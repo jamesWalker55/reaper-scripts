@@ -4,7 +4,7 @@
 type: script
 category: MIDI
 
-default_filename: Force enable send all input to VKB
+default_filename: Force enable send all input to virtual keyboard
 
 # ============ settings for versions ============
 
