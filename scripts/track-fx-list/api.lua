@@ -1,11 +1,6 @@
 local api = {}
 api = {}
 
--- api.currentProject = function()
---     local project, path = reaper.EnumProjects(-1)
---     return project
--- end
-
 -- only get a single selected track,
 -- return nil if no tracks/more than 1 tracks selected
 api.getSingleSelectedTrack = function()
