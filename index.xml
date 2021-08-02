@@ -60,6 +60,16 @@ arr-freeze-menu-sws-kawa.lua\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 set-record-path.lua}\par}
 {\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Used to generate a new recording path and set it to the project\u8217's \u8220"recording path\u8221" setting\sa180\sa180\par}
 }
+</description></metadata></reapack><reapack name="Track FX Menu" type="script" desc="Track FX List"><version name="0.0.1" author="kotll" time="2021-08-02T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\track-fx-list\track-fx-list.lua" main="main">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/52e02bcfb6e72b99375c5d2db7e7f9be7cfc2ac2/scripts/track-fx-list/track-fx-list.lua</source><source file="..\scripts\track-fx-list\widgets.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/52e02bcfb6e72b99375c5d2db7e7f9be7cfc2ac2/scripts/track-fx-list/widgets.lua</source><source file="..\scripts\track-fx-list\api.lua">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/52e02bcfb6e72b99375c5d2db7e7f9be7cfc2ac2/scripts/track-fx-list/api.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Track FX Menu\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This provides a window with a list of FX effects for the selected track. The list can be manipulated through drag and drop, I\u8217've tried to make the drag/drop behaviour as similar to Reaper\u8217's own drag/drop behaviour as possible, including dragging an FX outside the window and onto the TCP or MCP.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Requirements:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The \u8220"Required Packages\u8221" package on my repository\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab The \u8220"ReaImGui\u8221" extension on ReaPack\sa180\par}
+}
 </description></metadata></reapack></category><category name="MIDI"><reapack name="Force enable send all input to virtual keyboard" type="script" desc="Force enable send all input to virtual keyboard"><version name="0.0.1" author="kotll" time="2021-07-26T00:00:00Z"><changelog>First commit.</changelog><source file="..\scripts\send-virtual-keyboard\send-virtual-keyboard.lua" main="main midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/e4714d401854f79fcda35b1ce7b5cda7428806bd/scripts/send-virtual-keyboard/send-virtual-keyboard.lua</source><source file="..\scripts\send-virtual-keyboard\toggle-virtual-keyboard.lua" main="main midi_editor midi_inlineeditor midi_eventlisteditor">https://raw.githubusercontent.com/jamesWalker55/reaper-scripts/e4714d401854f79fcda35b1ce7b5cda7428806bd/scripts/send-virtual-keyboard/toggle-virtual-keyboard.lua</source></version><metadata><description>{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
