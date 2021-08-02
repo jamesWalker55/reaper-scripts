@@ -3,7 +3,6 @@ local _root_path = ({reaper.get_action_context()})[2]:match('^(.+[\\//])scripts'
 local _parent_path = ({reaper.get_action_context()})[2]:match('^(.+[\\//])') .. "?.lua"
 package.path = _parent_path .. ";" .. _root_path
 
-require "lib.dev"
 Api = require "api"
 local config = require "lib.config"
 local w = require "widgets"
