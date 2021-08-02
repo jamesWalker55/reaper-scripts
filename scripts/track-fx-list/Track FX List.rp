@@ -1,0 +1,28 @@
+# this is a metadata file, this represents one package
+# ideally there will be a *.rp file for each package in the package's root folder
+
+type: script
+category: Various
+
+default_filename: Track FX Menu
+
+# ============ settings for versions ============
+
+# sets the author for all versions
+author: kotll
+
+versions:
+- number: "0.0.1"
+  commit_hash: 52e02bcfb6e72b99375c5d2db7e7f9be7cfc2ac2
+
+  # list of files included in this version, relative to this file
+  files:
+    - path: track-fx-list.lua
+      sections: main
+    - widgets.lua
+    - api.lua
+  
+  changelog:
+    First commit.
+
+  date: "2021-08-02"
