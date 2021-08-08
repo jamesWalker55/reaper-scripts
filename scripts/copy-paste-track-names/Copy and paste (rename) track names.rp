@@ -19,7 +19,7 @@ versions:
   files:
     - path: copy-track-names.lua
       sections: main
-    - path: set-track-names.lua
+    - path: paste-track-names.lua
       sections: main
 
   # this is the changelog, it is optional but highly recommended
