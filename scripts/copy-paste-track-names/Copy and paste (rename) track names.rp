@@ -1,0 +1,30 @@
+# this is a metadata file, this represents one package
+# ideally there will be a *.rp file for each package in the package's root folder
+
+type: script
+category: Tracks Properties
+
+default_filename: Copy and paste (rename) track names
+
+# ============ settings for versions ============
+
+# sets the author for all versions
+author: kotll
+
+versions:
+- number: "0.0.1"
+  commit_hash: 6e4e1431ab4e2cda1fc5c49df12d7270155b3fd5
+
+  # list of files included in this version, relative to this file
+  files:
+    - path: copy-track-names.lua
+      sections: main
+    - path: set-track-names.lua
+      sections: main
+
+  # this is the changelog, it is optional but highly recommended
+  changelog:
+    First commit.
+
+  date: "2021-08-08"
+
