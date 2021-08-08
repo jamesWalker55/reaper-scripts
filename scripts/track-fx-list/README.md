@@ -4,5 +4,5 @@ This provides a window with a list of FX effects for the selected track. The lis
 
 Requirements:
 
-- The "Required Packages" package on my repository
+- The "Required Functions" package on my repository
 - The "ReaImGui" extension on ReaPack

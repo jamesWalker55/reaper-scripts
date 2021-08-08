@@ -1,5 +1,7 @@
 # Various Dropdown Menus
 
+This script requires the "Required Functions" package to be installed.
+
 This package contains a bunch of dropdown menus. These menus attempt to organize Reaper actions to more accessible groups:
 
 - Arrangement menus:
