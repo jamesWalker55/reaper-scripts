@@ -34,3 +34,26 @@ versions:
 
   date: "2021-07-26"
 
+- number: "0.0.2"
+  commit_hash: 6e4e1431ab4e2cda1fc5c49df12d7270155b3fd5
+
+  # list of files included in this version, relative to this file
+  files:
+    - actions.lua
+    - config.lua
+    - dev.lua
+    - file.lua
+    - menu.lua
+    - on-project-load.lua
+    - projects.lua
+    - random-string.lua
+    - regex.lua
+    - str-funcs.lua
+    - tracks.lua
+
+  # this is the changelog, it is optional but highly recommended
+  changelog:
+    Create the `lib.tracks` library.
+
+  date: "2021-08-08"
+
