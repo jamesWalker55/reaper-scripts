@@ -126,4 +126,4 @@ else
   }
 end
 
-QuickMenu(SECTION_ID.MAIN, menu_table)
+QuickMenu(SECTION_ID.MIDI, menu_table)
