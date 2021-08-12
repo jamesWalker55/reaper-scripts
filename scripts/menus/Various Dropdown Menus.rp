@@ -63,3 +63,15 @@ versions:
     First commit.
 
   date: "2021-07-29"
+
+- number: "0.0.2"
+  commit_hash: cb93e6a5061074f598fb518de499b8d0ae419203
+
+  # list of files included in this version, relative to this file
+  files:
+    inherit
+  
+  changelog:
+    Fix `midi-transform-menu-kawa.lua` to use MIDI section ID
+
+  date: "2021-08-12"
