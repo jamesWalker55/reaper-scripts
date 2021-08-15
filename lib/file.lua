@@ -1,7 +1,7 @@
 local file = {}
 
 -- checks if the given path is a valid file/directory
-file.exists = function(path)
+local function fileOrDirExists(path)
   path = reaper.resolve_fn2(path, "", "")
   if reaper.file_exists(path) then return true end
 
@@ -18,6 +18,16 @@ file.exists = function(path)
     return true
   else
     return false
+  end
+end
+
+-- checks if the given path is a valid file/directory
+file.exists = function(path, files_only)
+  if files_only then
+    path = reaper.resolve_fn2(path, "", "")
+    return reaper.file_exists(path)
+  else
+    return fileOrDirExists(path)
   end
 end
 
