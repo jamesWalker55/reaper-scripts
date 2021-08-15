@@ -18,4 +18,22 @@ tracks.iterSelected = function(want_master)
   return iter, nil, 0
 end
 
+--[[
+returns all selected tracks in the current project as a table
+]]
+tracks.selected = function(want_master)
+  if want_master == nil then want_master = true end
+
+	local tks = {}
+	local i = 0
+	while true do
+    local t = reaper.GetSelectedTrack2(0, i, want_master)
+		if t == nil then break end
+
+		table.insert(tks, t)
+		i = i + 1
+	end
+	return tks
+end
+
 return tracks
