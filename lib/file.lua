@@ -31,4 +31,15 @@ file.exists = function(path, files_only)
   end
 end
 
+file.lines = function(path)
+  -- check path exists
+  if not file.exists(path, true) then return nil end
+
+  local lines = {}
+  for l in io.lines(path) do
+    lines[#lines + 1] = l
+  end
+  return lines
+end
+
 return file
