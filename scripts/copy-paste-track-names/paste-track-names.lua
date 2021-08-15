@@ -11,7 +11,7 @@ local function setTrackName(track, name)
   return rv
 end
 
-local track_names = reaper.CF_GetClipboard():split("\r\n")
+local track_names = reaper.CF_GetClipboard():splitlines()
 for i, track in tks.iterSelected(false) do
   if track_names[i] ~= nil then
     setTrackName(track, track_names[i])
