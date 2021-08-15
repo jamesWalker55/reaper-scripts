@@ -13,6 +13,35 @@ string.split = function(text, separator)
       items[i] = text:sub(search_pos + 1, match_pos - 1)
       i = i + 1
       search_pos = match_pos
+    end
   end
+end
+
+-- robust method to split by lines, this handles both "\n" and "\r\n" sequences
+string.splitlines = function(text)
+  local lines = {}
+  local i = 1
+  local search_pos = 0
+  while true do
+    local nl_pos = text:find("\n", search_pos + 1, true)
+    if nl_pos == nil then
+      -- if no newlines, then it is end of string
+      lines[i] = text:sub(search_pos + 1, -1)
+      return lines
+    else
+      if text:sub(nl_pos - 1, nl_pos - 1) == "\r" then
+        -- there is carriage return just before the newline
+        lines[i] = text:sub(search_pos + 1, nl_pos - 2)
+      else
+        -- there no carriage return just before the newline
+        lines[i] = text:sub(search_pos + 1, nl_pos - 1)
+      end
+      i = i + 1
+      search_pos = nl_pos
+    end
   end
+end
+
+string.strip = function(s)
+  return (s:gsub("^%s*(.-)%s*$", "%1"))
 end
