@@ -35,25 +35,30 @@ versions:
   date: "2021-07-26"
 
 - number: "0.0.2"
-  commit_hash: 6e4e1431ab4e2cda1fc5c49df12d7270155b3fd5
+  commit_hash: 10367a2a3a23a71ba7d5aba207bacc210ef896c4
 
   # list of files included in this version, relative to this file
   files:
     - actions.lua
+    - arrchunk.lua
+    - chunk.lua
     - config.lua
     - dev.lua
     - file.lua
+    - fx-data.lua
+    - ini.lua
     - menu.lua
     - on-project-load.lua
     - projects.lua
     - random-string.lua
     - regex.lua
     - str-funcs.lua
+    - track.lua
     - tracks.lua
 
   # this is the changelog, it is optional but highly recommended
   changelog:
-    Create the `lib.tracks` library.
+    Implement a bunch of libraries, mainly dealing with chunk states
 
-  date: "2021-08-08"
+  date: "2021-08-18"
 
