@@ -26,3 +26,17 @@ versions:
     First commit.
 
   date: "2021-08-02"
+
+- number: "0.0.2"
+  commit_hash: 0ece7ca141e12e3ed8a65e1453cc4e6074162571
+
+  # list of files included in this version, relative to this file
+  files:
+    inherit
+  
+  changelog:
+    Improve track renaming, now supports more quote characters (and may be faster).
+
+    This requires 0.0.2 of the Required Functions package
+
+  date: "2021-08-18"
