@@ -56,4 +56,19 @@ module._testChunk = function(chunk)
   return chunk == chunk_copy
 end
 
+-- get the first line of each element, for pretty printing
+module._tagLines = function(array)
+  local lines = {}
+  local lines_count = 1
+  lines[lines_count] = array[1]
+  for _, subtable in ipairs(array) do
+    if type(subtable) == "table" then
+      local subelements = module._tagLines(subtable)
+      lines_count = lines_count + 1
+      lines[lines_count] = subelements
+    end
+  end
+  return lines
+end
+
 return module
