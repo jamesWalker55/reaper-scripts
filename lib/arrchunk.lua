@@ -31,7 +31,7 @@ local function parseChunkLines(lines, start_pos)
   end
 end
 
-module.fromString = function(chunk)
+module.fromChunk = function(chunk)
   local lines = chunk:split("\n")  -- use split instead of splitline for more efficiency
   local array = parseChunkLines(lines, 1)
   return array
@@ -46,13 +46,13 @@ local function arrayToChunk(arr)
   return "<" .. table.concat(arr, "\n") .. "\n>"
 end
 
-module.toString = function(array)
+module.toChunk = function(array)
   return arrayToChunk(array) .. "\n"
 end
 
 -- tests the toArray and fromArray functions
 module._testChunk = function(chunk)
-  local chunk_copy = module.toString(module.fromString(chunk))
+  local chunk_copy = module.toChunk(module.fromChunk(chunk))
   return chunk == chunk_copy
 end
 
