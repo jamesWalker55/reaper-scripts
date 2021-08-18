@@ -1,3 +1,5 @@
+local tk = require "lib.track"
+
 local widgets = {}
 
 local ctx
@@ -228,7 +230,7 @@ widgets.fxItem = function(media_track, fx_index, remove_colon)
     reaper.ImGui_PushItemWidth(ctx, -({reaper.ImGui_NumericLimits_Float()})[1])
     _, fx_name = reaper.ImGui_InputText(ctx, '##FX Name', fx_name)
     if reaper.ImGui_IsItemDeactivatedAfterEdit(ctx) then
-      Api.renameTrackFx(media_track, fx_index, fx_name)
+      tk.renameFX(media_track, fx_index, fx_name)
     end
     reaper.ImGui_PopItemWidth(ctx)
 
