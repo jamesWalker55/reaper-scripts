@@ -49,11 +49,11 @@ end
   escape a string to be used in a state chunk
  ]]
 module.escape_string = function(name)
-  if not name:find(" ") and not name:find("^[\"'`]") then
+  if name == "" then
+    return '""'
+  elseif not name:find(" ") and not name:find("^[\"'`]") then
     -- single word with no quote at start, return as is
     return name
-  elseif name == "" then
-    return '""'
   else
     -- replace existing backquotes with single quotes then surround with backquotes
     name = name:gsub("`","'")
