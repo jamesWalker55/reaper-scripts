@@ -36,8 +36,10 @@ file.lines = function(path)
   if not file.exists(path, true) then return nil end
 
   local lines = {}
+  local i = 1
   for l in io.lines(path) do
-    lines[#lines + 1] = l
+    lines[i] = l
+    i = i + 1
   end
   return lines
 end
