@@ -62,7 +62,7 @@ module.widget = function(ctx, menu_items)
     end
 
     -- draw item
-    local is_folder = item.items ~= nil
+    local is_folder = item.type == nil
     if is_folder then
       reaper.ImGui_PushStyleColor(ctx, reaper.ImGui_Col_HeaderHovered(), BASE16[5])
       reaper.ImGui_PushStyleColor(ctx, reaper.ImGui_Col_HeaderActive(), BASE16[5])
