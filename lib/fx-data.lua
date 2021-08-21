@@ -193,4 +193,34 @@ module.fxnames.get = function()
   return default_map
 end
 
+module.fxItemMetaName = function(item, fxnames)
+  if item.type == "JSFX" then
+    return fxnames[item.name]
+  elseif item.type == "VST" then
+    local filename = item.name:match([[.*[\/](.+)$]])
+    local key = filename:gsub("[^%w.]", "_")
+    return fxnames[key]
+  elseif item.type == "FX Chain" then
+    return item.name
+  else
+    return nil, "Unknown item type"
+  end
+end
+
+module.FX_PATH_TEMPLATE = {
+  ["VST"] = "VST:%s",
+  ["JSFX"] = "JS:%s",
+  ["FX Chain"] = "%s.RfxChain",
+  -- not tested, the following are educated guesses
+  ["AU"] = "AU:%s",
+  ["DX"] = "DX:%s",
+}
+
+module.fxItemToPath = function(item)
+  local template = module.FX_PATH_TEMPLATE[item.type]
+  if not template then return nil, "Unrecognised FX type: " .. item.type end
+
+  return template:format(item.name)
+end
+
 return module
