@@ -1,4 +1,5 @@
 local fxd = require "lib.fx-data"
+local config = require "lib.config"
 
 local module = {}
 
@@ -13,6 +14,10 @@ local BASE16 = {
   0xE8E6DFFF,
   0xF2F0ECFF,
 }
+
+-- config values
+local width = tonumber(config.val.fx_folder_width) or 260
+local height = 12
 
 module.generateMenuItems = function()
   local folders = assert(fxd.fxfolders.get())
@@ -38,9 +43,22 @@ module.generateMenuItems = function()
   return menu_items
 end
 
+module.contextMenu = function(ctx)
+  if reaper.ImGui_BeginPopupContextItem(ctx, 'settings popup menu') then
+    -- control item width
+    local min, max, _ = 10, 1000, nil
+    _, width = reaper.ImGui_DragInt(ctx, "Item Width", width, nil, min, max, "%d px")
+    width = math.max(min, math.min(max, width))
+
+    if reaper.ImGui_IsItemDeactivatedAfterEdit(ctx) then
+      config.val.fx_folder_width = tostring(width)
+    end
+
+    reaper.ImGui_EndPopup(ctx)
+  end
+end
+
 module.widget = function(ctx, menu_items)
-  local width = 200
-  local height = 12
   local output = nil
 
   -- set colors for selectables
@@ -69,6 +87,7 @@ module.widget = function(ctx, menu_items)
       reaper.ImGui_PushStyleColor(ctx, reaper.ImGui_Col_Text(), BASE16[1])
       reaper.ImGui_Selectable(ctx, item.name .. "##folder" .. i, true, nil, width, height)
       reaper.ImGui_PopStyleColor(ctx, 3)
+      reaper.ImGui_OpenPopupOnItemClick(ctx, 'settings popup menu', reaper.ImGui_PopupFlags_MouseButtonRight())
     else
       local clicked = reaper.ImGui_Selectable(ctx, item.meta_name .. "##item" .. i, false, nil, width, height)
       if clicked then
@@ -83,6 +102,8 @@ module.widget = function(ctx, menu_items)
   -- end groups
   reaper.ImGui_EndGroup(ctx)
   reaper.ImGui_EndGroup(ctx)
+
+  module.contextMenu(ctx)
 
   return output
 end
