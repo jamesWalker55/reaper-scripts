@@ -62,3 +62,16 @@ versions:
 
   date: "2021-08-18"
 
+- number: "0.0.3"
+  commit_hash: b49cd0070b006cbd1ea3a17574c5a06cc69da1e6
+
+  # list of files included in this version, relative to this file
+  files:
+    inherit
+
+  # this is the changelog, it is optional but highly recommended
+  changelog:
+    temp
+
+  date: "2021-08-21"
+
