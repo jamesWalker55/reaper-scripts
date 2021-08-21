@@ -21,6 +21,8 @@ module.generateMenuItems = function()
   local menu_items = {}
   local i = 1
   for _, folder in ipairs(folders) do
+    if folder.name:match("^#") then goto continue end
+
     menu_items[i] = folder
     i = i + 1
     for _, item in ipairs(folder.items) do
@@ -30,6 +32,7 @@ module.generateMenuItems = function()
       menu_items[i] = item
       i = i + 1
     end
+    ::continue::
   end
 
   return menu_items
