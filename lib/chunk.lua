@@ -123,4 +123,15 @@ module.splitLine = function(line)
   end
 end
 
+--[[
+  remove quotes from a string if it exists, return as-is if no quotes found
+ ]]
+module.removeStringQuotes = function(text)
+  if text:match("^[\"'`]") then
+    return text:sub(2, -2)
+  else
+    return text
+  end
+end
+
 return module
