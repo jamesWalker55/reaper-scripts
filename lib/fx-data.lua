@@ -1,5 +1,6 @@
 local ini = require "lib.ini"
 local file = require "lib.file"
+local chunk = require "lib.chunk"
 
 local module = {}
 
@@ -85,6 +86,111 @@ module.fxfolders.get = function(ini_path)
     folder["items"] = fx_items
   end
   return folders
+end
+
+module.fxnames = {}
+
+module.fxnames.INI_NAMES = {
+  DEFAULT = "reaper-vstplugins64.ini",
+  ALIAS = "reaper-vstrenames64.ini",
+  JSFX = "reaper-jsfx.ini",
+}
+
+module.fxnames._getDefaultMap = function(ini_path)
+  if ini_path == nil then ini_path = file.absPath(module.fxnames.INI_NAMES.DEFAULT) end
+
+  local fxnames_ini, msg = ini.parseIni(ini_path, false)
+  if fxnames_ini == nil then return nil, "parseIni: " .. msg end
+
+  local items = nil
+  -- get map from the first (and only) section
+  for key, map in pairs(fxnames_ini) do
+    items = map
+    break
+  end
+  if items == nil then return nil, "Failed to obtain FX name list from " .. ini_path end
+
+  for key, old_name in pairs(items) do
+    -- remove first two values delimited by commas
+    local new_name = old_name:match("%w+,%d+,(.+)")
+    if new_name == nil then
+      -- new_name is nil if reaper fails to load a plugin, e.g. `["iZRX8De_clip.dll"]="000008231899D601"`
+      -- setting value to nil will delete the key
+      items[key] = nil
+    else
+      -- remove `!!!VSTi` text at end of some FX names
+      local no_vsti = new_name:match("(.*)!!!VSTi")
+      if no_vsti ~= nil then new_name = no_vsti end
+      items[key] = new_name
+    end
+  end
+  return items
+end
+
+--[[
+  this can return nil if the user haven't renamed any plugins
+ ]]
+module.fxnames._getAliasMap = function(ini_path)
+  if ini_path == nil then ini_path = file.absPath(module.fxnames.INI_NAMES.ALIAS) end
+
+  local fxnames_ini, msg = ini.parseIni(ini_path, false)
+  if fxnames_ini == nil then return nil, "parseIni: " .. msg end
+
+  local items = nil
+  -- get map from the first (and only) section
+  for key, map in pairs(fxnames_ini) do
+    items = map
+    break
+  end
+  if items == nil then return nil, "Failed to obtain alias FX name list from " .. ini_path end
+
+  for key, old_name in pairs(items) do
+    -- remove `!!!VSTi` text at end of some FX names
+    local no_vsti = old_name:match("(.*)!!!VSTi")
+    if no_vsti ~= nil then
+      items[key] = no_vsti
+    end
+  end
+  return items
+end
+
+module.fxnames._getJSFXMap = function(ini_path)
+  if ini_path == nil then ini_path = file.absPath(module.fxnames.INI_NAMES.JSFX) end
+
+  local lines = file.lines(ini_path)
+  if lines == nil then return nil, "Failed to load " .. ini_path end
+
+  local jsfx_map = {}
+  for i, line in ipairs(lines) do
+    if line:find("^REV ") then
+      local args = chunk.splitLine(line)
+      if #args == 3 then
+        local name, path = chunk.removeStringQuotes(args[2]), chunk.removeStringQuotes(args[3])
+        jsfx_map[path] = name
+      end
+    end
+  end
+
+  return jsfx_map
+end
+
+--[[
+  combined map of default names, jsfx names, and alias names
+ ]]
+module.fxnames.get = function()
+  local default_map = module.fxnames._getDefaultMap()
+  local jsfx_map = module.fxnames._getJSFXMap()
+  local alias_map = module.fxnames._getAliasMap()
+  for fx, name in pairs(jsfx_map) do
+    assert(default_map[fx] == nil, ("Name conflict: %s is defined in default names and jsfx names"):format(fx))
+    default_map[fx] = name
+  end
+  if alias_map ~= nil then
+    for fx, name in pairs(alias_map) do
+      default_map[fx] = name
+    end
+  end
+  return default_map
 end
 
 return module
