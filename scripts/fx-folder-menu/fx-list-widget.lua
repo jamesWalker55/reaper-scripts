@@ -18,6 +18,8 @@ local BASE16 = {
 -- config values
 local width = tonumber(config.val.fx_folder_width) or 260
 local height = 12
+local offset_x = tonumber(config.val.fx_folder_offset_x) or 0
+local offset_y = tonumber(config.val.fx_folder_offset_y) or 0
 
 module.generateMenuItems = function()
   local folders = assert(fxd.fxfolders.get())
@@ -52,6 +54,16 @@ module.contextMenu = function(ctx)
 
     if reaper.ImGui_IsItemDeactivatedAfterEdit(ctx) then
       config.val.fx_folder_width = tostring(width)
+    end
+
+    -- control startup position relative to mouse
+    _, offset_x, offset_y = reaper.ImGui_DragDouble2(ctx, "Startup Offset", offset_x * 100, offset_y * 100, 0.2, 0, 100, "%.01f %%")
+    offset_x = math.max(0, math.min(1, offset_x / 100))
+    offset_y = math.max(0, math.min(1, offset_y / 100))
+
+    if reaper.ImGui_IsItemDeactivatedAfterEdit(ctx) then
+      config.val.fx_folder_offset_x = tostring(offset_x)
+      config.val.fx_folder_offset_y = tostring(offset_y)
     end
 
     reaper.ImGui_EndPopup(ctx)
@@ -106,6 +118,11 @@ module.widget = function(ctx, menu_items)
   module.contextMenu(ctx)
 
   return output
+end
+
+module.setNextWindowPos = function(ctx)
+  local x, y = reaper.GetMousePosition()
+  reaper.ImGui_SetNextWindowPos(ctx, x, y, 1, offset_x, offset_y)
 end
 
 module.window = function(ctx, menu_items)

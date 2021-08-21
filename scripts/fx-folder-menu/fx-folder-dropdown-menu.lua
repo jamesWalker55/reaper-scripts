@@ -30,4 +30,5 @@ local function loop()
   end
 end
 
+list.setNextWindowPos(ctx)
 reaper.defer(loop)
