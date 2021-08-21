@@ -91,6 +91,9 @@ widgets.trackName = function(media_track)
     track_name = "Master"
   else
     _, track_name = reaper.GetSetMediaTrackInfo_String(media_track, "P_NAME", "", false)
+    if track_name == "" then
+      track_name = "(untitled)"
+    end
   end
 
   reaper.ImGui_Text(ctx, ("[%d] %s"):format(track_num, track_name))
