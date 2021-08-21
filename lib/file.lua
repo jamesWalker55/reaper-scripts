@@ -44,4 +44,20 @@ file.lines = function(path)
   return lines
 end
 
+--[[
+  return a path relative to the current Reaper data folder. Example:
+  ```
+  file.abs_path("reaper-fxfolders.ini")
+  -- C:\Users\Bob\AppData\Roaming\REAPER\reaper-fxfolders.ini
+  ```
+ ]]
+file.absPath = function(rel_path)
+  if rel_path == nil then rel_path = "" end
+
+  local reaper_ini_path = reaper.get_ini_file()
+  -- assume base dir is parent directory of ini_path
+  local reaper_base_dir = reaper_ini_path:match([[^(.+[\/])]])
+  return reaper_base_dir .. rel_path
+end
+
 return file

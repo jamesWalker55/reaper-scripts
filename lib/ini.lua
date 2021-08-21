@@ -6,18 +6,6 @@ local file = require "lib.file"
 local module = {}
 
 --[[
-  return a path like `C:\Users\Bob\AppData\Roaming\REAPER\`
- ]]
-module.abs_path = function(rel_path)
-  if rel_path == nil then rel_path = "" end
-
-  local reaper_ini_path = reaper.get_ini_file()
-  -- assume base dir is parent directory of ini_path
-  local reaper_base_dir = reaper_ini_path:match([[^(.+[\/])]])
-  return reaper_base_dir .. rel_path
-end
-
---[[
   find first occurence of ";" in the given string then remove text after it
  ]]
 local function removeComment(line)
