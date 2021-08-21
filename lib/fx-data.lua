@@ -1,4 +1,5 @@
 local ini = require "lib.ini"
+local file = require "lib.file"
 
 local module = {}
 
@@ -68,7 +69,7 @@ end
   `ini_path` is optional
  ]]
 module.fxfolders.get = function(ini_path)
-  if ini_path == nil then ini_path = ini.abs_path(module.fxfolders.INI_NAME) end
+  if ini_path == nil then ini_path = file.absPath(module.fxfolders.INI_NAME) end
 
   local fxfolder_ini, msg = ini.parseIni(ini_path, false)
   if fxfolder_ini == nil then return nil, "parseIni: " .. msg end
