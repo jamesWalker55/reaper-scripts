@@ -30,5 +30,11 @@ local function loop()
   end
 end
 
-list.setNextWindowPos(ctx)
-reaper.defer(loop)
+local function main()
+  if #tracks.selected(true) == 0 then return end
+
+  list.setNextWindowPos(ctx)
+  reaper.defer(loop)
+end
+
+main()
