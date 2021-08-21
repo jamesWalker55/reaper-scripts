@@ -55,7 +55,7 @@ module.widget = function(ctx, menu_items)
   for i, item in ipairs(menu_items) do
     -- break into new line group if not enough space
     local remaining_height = ({reaper.ImGui_GetContentRegionAvail(ctx)})[2]
-    if remaining_height < height then
+    if remaining_height < height or item.name:find("^>") then
       reaper.ImGui_EndGroup(ctx)
       reaper.ImGui_SameLine(ctx)
       reaper.ImGui_BeginGroup(ctx)
