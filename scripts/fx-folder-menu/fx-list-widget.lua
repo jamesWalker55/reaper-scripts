@@ -15,8 +15,8 @@ local BASE16 = {
 }
 
 module.generateMenuItems = function()
-  local folders = fxd.fxfolders.get()
-  local fxnames = fxd.fxnames.get()
+  local folders = assert(fxd.fxfolders.get())
+  local fxnames = assert(fxd.fxnames.get())
 
   local menu_items = {}
   local i = 1
@@ -24,8 +24,7 @@ module.generateMenuItems = function()
     menu_items[i] = folder
     i = i + 1
     for _, item in ipairs(folder.items) do
-      local meta_name, msg = fxd.fxItemMetaName(item, fxnames)
-      assert(meta_name, msg)
+      local meta_name = assert(fxd.fxItemMetaName(item, fxnames))
 
       item.meta_name = meta_name
       menu_items[i] = item
