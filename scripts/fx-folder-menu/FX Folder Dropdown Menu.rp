@@ -13,7 +13,7 @@ author: kotll
 
 versions:
 - number: "0.0.1"
-  commit_hash: 20a58789cc2ece420a2104ea5189c259dd8b7258
+  commit_hash: d2bb6396a2ebdaa4136306c23ea0ab0d1c24040d
 
   # list of files included in this version, relative to this file
   files:
