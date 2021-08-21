@@ -84,14 +84,16 @@ end
 
 widgets.trackName = function(media_track)
   local track_num = reaper.GetMediaTrackInfo_Value(media_track, "IP_TRACKNUMBER")
-  track_num = ("%d"):format(track_num)
-  local _, track_name = reaper.GetSetMediaTrackInfo_String(media_track, "P_NAME", "", false)
+  local _, track_name
 
   if track_num == -1 then
-    reaper.ImGui_Text(ctx, "Track 0: Master")
+    track_num = 0
+    track_name = "Master"
   else
-    reaper.ImGui_Text(ctx, "[" .. track_num .. "] " .. track_name)
+    _, track_name = reaper.GetSetMediaTrackInfo_String(media_track, "P_NAME", "", false)
   end
+
+  reaper.ImGui_Text(ctx, ("[%d] %s"):format(track_num, track_name))
 end
 
 -- fx_index starts from 1
