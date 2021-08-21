@@ -18,8 +18,8 @@ module.fxfolders._parseFolder = function(folder_table)
 
   local folder = {}
   for i = 1, fx_count do
-    local fx_path = folder_table["Item" .. i - 1]
-    if fx_path == nil then return nil, "Item " .. i .. " path missing" end
+    local fx_name = folder_table["Item" .. i - 1]
+    if fx_name == nil then return nil, "Item " .. i .. " path missing" end
 
     local fx_type_num = tonumber(folder_table["Type" .. i - 1])
     if fx_type_num == nil then return nil, "Item " .. i .. " type missing" end
@@ -36,7 +36,7 @@ module.fxfolders._parseFolder = function(folder_table)
     end
 
     folder[i] = {
-      path = fx_path,
+      name = fx_name,
       type = fx_type_str,
     }
   end
