@@ -23,3 +23,13 @@ end
 function paste()
   return reaper.CF_GetClipboard()
 end
+
+table.keys = function(tb)
+  local keys = {}
+  local i = 1
+  for key, _ in pairs(tb) do
+    keys[i] = key
+    i = i + 1
+  end
+  return keys
+end
