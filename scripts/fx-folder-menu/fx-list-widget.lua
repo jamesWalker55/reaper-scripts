@@ -160,7 +160,9 @@ module.window = function(ctx, menu_items)
   reaper.ImGui_SetWindowSize(ctx, total_width + reaper.ImGui_StyleVar_FramePadding() * 2, current_height)
 
   -- close window if unfocused
-  close_pressed = not reaper.ImGui_IsWindowFocused(ctx, reaper.ImGui_FocusedFlags_AnyWindow())
+  if not reaper.ImGui_IsWindowFocused(ctx, reaper.ImGui_FocusedFlags_AnyWindow()) then
+    close_pressed = true
+  end
 
   -- end window
   reaper.ImGui_End(ctx)
