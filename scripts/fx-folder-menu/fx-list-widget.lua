@@ -164,6 +164,9 @@ module.window = function(ctx, menu_items)
     close_pressed = true
   end
 
+  -- close window if ESC is pressed
+  close_pressed = reaper.ImGui_IsKeyDown(ctx, 27) or close_pressed
+
   -- end window
   reaper.ImGui_End(ctx)
 
