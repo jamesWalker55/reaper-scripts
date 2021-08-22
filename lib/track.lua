@@ -37,6 +37,30 @@ module.addRecFx = function(track, fx_path, position)
   return addFx(track, fx_path, position, true)
 end
 
+-- fx index starts from 0. dest_fx_idx is optional, defaults to last position.
+module.copyFxToTrack = function(track, fx_idx, dest_track, dest_fx_idx)
+  if dest_fx_idx == nil then dest_fx_idx = -1 end
+  reaper.TrackFX_CopyToTrack(track, fx_idx, dest_track, dest_fx_idx, false)
+end
+
+-- fx index starts from 0. dest_fx_idx is optional, defaults to last position.
+module.moveFxToTrack = function(track, fx_idx, dest_track, dest_fx_idx)
+  if dest_fx_idx == nil then dest_fx_idx = -1 end
+  reaper.TrackFX_CopyToTrack(track, fx_idx, dest_track, dest_fx_idx, true)
+end
+
+-- fx index starts from 0. dest_fx_idx is optional, defaults to last position.
+module.copyFxToTake = function(track, fx_idx, dest_take, dest_fx_idx)
+  if dest_fx_idx == nil then dest_fx_idx = -1 end
+  reaper.TrackFX_CopyToTake(track, fx_idx, dest_take, dest_fx_idx, false)
+end
+
+-- fx index starts from 0. dest_fx_idx is optional, defaults to last position.
+module.moveFxToTake = function(track, fx_idx, dest_take, dest_fx_idx)
+  if dest_fx_idx == nil then dest_fx_idx = -1 end
+  reaper.TrackFX_CopyToTake(track, fx_idx, dest_take, dest_fx_idx, true)
+end
+
 module.RENAME_FX_POS = {
   JS = 3,
   AU = 4,
