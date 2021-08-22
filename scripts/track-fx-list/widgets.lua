@@ -1,4 +1,5 @@
 local tk = require "lib.track"
+local folder_adder = require "scripts.fx-folder-menu.fx-list-widget"
 
 local widgets = {}
 
@@ -52,34 +53,6 @@ widgets.getMods = function()
   mods.alt = (mod_bits & reaper.ImGui_KeyModFlags_Alt()) ~= 0
   mods.super = (mod_bits & reaper.ImGui_KeyModFlags_Super()) ~= 0
   return mods
-end
-
-local function moveFxSameTrack(media_track, src_idx, dest_idx)
-  local mods = widgets.getMods()
-  if mods.ctrl then
-    reaper.TrackFX_CopyToTrack(media_track, src_idx, media_track, dest_idx, false)
-  else
-    reaper.TrackFX_CopyToTrack(media_track, src_idx, media_track, dest_idx, true)
-  end
-end
-
-local function moveFxDifferentTrack(src_media_track, src_idx, dest_media_track, dest_idx)
-  local mods = widgets.getMods()
-  if mods.alt then
-    reaper.TrackFX_CopyToTrack(src_media_track, src_idx, dest_media_track, dest_idx, true)
-  else
-    reaper.TrackFX_CopyToTrack(src_media_track, src_idx, dest_media_track, dest_idx, false)
-  end
-end
-
-local function moveFxToTake(media_track, src_idx, media_take)
-  local mods = widgets.getMods()
-  local take_fx_count = reaper.TakeFX_GetCount(media_take)
-  if mods.alt then
-    reaper.TrackFX_CopyToTake(media_track, src_idx, media_take, take_fx_count, true)
-  else
-    reaper.TrackFX_CopyToTake(media_track, src_idx, media_take, take_fx_count, false)
-  end
 end
 
 widgets.trackName = function(media_track)
@@ -189,7 +162,11 @@ widgets.fxItem = function(media_track, fx_index, remove_colon)
     local rv, src_fx_index_str = reaper.ImGui_AcceptDragDropPayload(ctx, 'FX_INDEX')
     if rv then
       local src_fx_index = tonumber(src_fx_index_str)
-      moveFxSameTrack(media_track, src_fx_index, fx_index)
+      if widgets.getMods().ctrl then
+        tk.copyFxToTrack(media_track, src_fx_index, media_track, fx_index)
+      else
+        tk.moveFxToTrack(media_track, src_fx_index, media_track, fx_index)
+      end
     end
     reaper.ImGui_EndDragDropTarget(ctx)
   end
@@ -202,11 +179,18 @@ widgets.fxItem = function(media_track, fx_index, remove_colon)
       local same_track = dest_obj == media_track
       -- do nothing if same track
       if not same_track then
-        local dest_fx_count = reaper.TrackFX_GetCount(dest_obj)
-        moveFxDifferentTrack(media_track, fx_index, dest_obj, dest_fx_count)
+        if widgets.getMods().alt then
+          tk.moveFxToTrack(media_track, fx_index, dest_obj)
+        else
+          tk.copyFxToTrack(media_track, fx_index, dest_obj)
+        end
       end
     elseif mode == "take" then
-      moveFxToTake(media_track, fx_index, dest_obj)
+      if widgets.getMods().alt then
+        tk.moveFxToTake(media_track, fx_index, dest_obj)
+      else
+        tk.copyFxToTake(media_track, fx_index, dest_obj)
+      end
     end
   end
 
