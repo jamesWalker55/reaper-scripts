@@ -25,12 +25,12 @@ tracks.selected = function(want_master)
   if want_master == nil then want_master = true end
 
 	local tks = {}
-	local i = 0
+	local i = 1
 	while true do
-    local t = reaper.GetSelectedTrack2(0, i, want_master)
+    local t = reaper.GetSelectedTrack2(0, i - 1, want_master)
 		if t == nil then break end
 
-		table.insert(tks, t)
+    tks[i] = t
 		i = i + 1
 	end
 	return tks
