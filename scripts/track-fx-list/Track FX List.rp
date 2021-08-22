@@ -40,3 +40,15 @@ versions:
     This requires 0.0.2 of the Required Functions package
 
   date: "2021-08-18"
+
+- number: "0.0.3"
+  commit_hash: bca08ff2fe9acc128f1981e7f9346822350d4106
+
+  # list of files included in this version, relative to this file
+  files:
+    inherit
+  
+  changelog:
+    temp
+
+  date: "2021-08-22"
