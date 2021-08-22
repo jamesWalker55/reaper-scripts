@@ -11,8 +11,13 @@ local list = require "fx-list-widget"
 local ctx = reaper.ImGui_CreateContext('fx-folder-menu')
 local menu_items = list.generateMenuItems()
 
+local font = reaper.ImGui_CreateFont("Inter", 12)
+reaper.ImGui_AttachFont(ctx, font)
+
 local function loop()
+  reaper.ImGui_PushFont(ctx, font)
   local close_pressed, fx_path = list.window(ctx, menu_items)
+  reaper.ImGui_PopFont(ctx)
 
   if fx_path then
     local fx_added = false
