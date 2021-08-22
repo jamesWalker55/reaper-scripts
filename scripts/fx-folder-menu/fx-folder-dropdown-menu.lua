@@ -33,7 +33,7 @@ end
 local function main()
   if #tracks.selected(true) == 0 then return end
 
-  list.setNextWindowPos(ctx)
+  -- list.setNextWindowPos(ctx)
   reaper.defer(loop)
 end
 
