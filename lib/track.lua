@@ -24,7 +24,7 @@ end
   add an fx to the track, given the name and the position (optional).
   position starts from 0.
  ]]
-module.addFX = function(track, fx_path, position)
+module.addFx = function(track, fx_path, position)
   return addFx(track, fx_path, position, false)
 end
 
@@ -33,7 +33,7 @@ end
   position starts from 0.
   to insert monitoring fx, use the master track as the argument
  ]]
-module.addRecFX = function(track, fx_path, position)
+module.addRecFx = function(track, fx_path, position)
   return addFx(track, fx_path, position, true)
 end
 

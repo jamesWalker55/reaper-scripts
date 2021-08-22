@@ -17,7 +17,7 @@ local function loop()
   if fx_path then
     local fx_added = false
     for _, t in tracks.iterSelected(true) do
-      track.addFX(t, fx_path)
+      track.addFx(t, fx_path)
       fx_added = true
     end
     if fx_added then close_pressed = true end
