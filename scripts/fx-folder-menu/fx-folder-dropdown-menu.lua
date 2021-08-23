@@ -22,7 +22,8 @@ local function loop()
   if fx_path then
     local fx_added = false
     for _, t in tracks.iterSelected(true) do
-      track.addFx(t, fx_path)
+      local fx_idx = track.addFx(t, fx_path)
+      reaper.TrackFX_Show(t, fx_idx, 3)
       fx_added = true
     end
     if fx_added then close_pressed = true end
