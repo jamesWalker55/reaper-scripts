@@ -56,8 +56,8 @@ local function main()
     setRecordPath(final_path)
     reaper.MarkProjectDirty(0)
 
-    -- create the path, reaper doesn't do it automatically
-    reaper.RecursiveCreateDirectory(final_path, 0)
+    -- -- create the path, reaper doesn't do it automatically
+    -- reaper.RecursiveCreateDirectory(final_path, 0)
 
     -- local msg = 'Audio path set to:\n'
     -- msg = msg .. '"' .. final_path .. '"'
