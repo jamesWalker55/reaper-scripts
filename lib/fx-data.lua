@@ -112,7 +112,7 @@ module.fxnames._getDefaultMap = function(ini_path)
 
   for key, old_name in pairs(items) do
     -- remove first two values delimited by commas
-    local new_name = old_name:match("%w+,%d+,(.+)")
+    local new_name = old_name:match("%w+,[%d-]+,(.+)")
     if new_name == nil then
       -- new_name is nil if reaper fails to load a plugin, e.g. `["iZRX8De_clip.dll"]="000008231899D601"`
       -- setting value to nil will delete the key
